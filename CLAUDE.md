@@ -51,6 +51,15 @@ Wuselig is an agentic AI system for building video games using a serverless GitH
 - Use `black` for formatting
 - Use `mypy` for type checking
 
+#### File Management Philosophy
+- **Keep files minimal**: Only include what's actually needed for current implementation
+- **No hypothetical futures**: Don't add configurations, dependencies, or patterns for features that don't exist yet
+- **Grow organically**: Add complexity only when it's required by actual code
+- Examples:
+  - .gitignore should only ignore files we actually generate
+  - requirements.txt should only list dependencies we actually use
+  - Configuration files should only contain settings we actually need
+
 #### Agent Development
 - Each agent should be stateless
 - Use dependency injection for external services
